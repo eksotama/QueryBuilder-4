@@ -21,12 +21,7 @@ namespace QueryBuilder.Resources
             this.ColumnOrdinal = columnOrdinal;
         }
 
-        public ColumnDefinition(string columnName, object columnValue, CompareOperatorEnum columnComparer) : this(columnName, columnValue)
-        {
-            this.ColumnComparer = columnComparer;
-        }
-
-        public ColumnDefinition(string columnName, object columnValue) : this(columnName)
+		public ColumnDefinition(string columnName, object columnValue) : this(columnName)
         {
             this.ColumnValue = columnValue;
         }
